@@ -75,3 +75,7 @@ iron worker queue --payload-file payload.json --wait rigor_datadog
 
 The `--wait` parameter waits for the job to finish, then prints the output.
 You will also see a link to [HUD](http://hud.iron.io) where you can see all the rest of the task details along with the log output.
+
+### 7. (optional) Schedule the worker to run periodically
+
+Using Scheduled Tasks, you can run the worker on a schedule to continuously sync Rigor data in Datadog. To schedule your new worker, check out [Iron's scheduling docs](http://dev.iron.io/worker/scheduling/#scheduling_in_dashboard) and set up the Scheduled Task in your Iron.io dashboard.
